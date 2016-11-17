@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62434117EBE14AE8D2483266 /* libPods-expeditiewadden.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF4303617F07D37463A9A3F /* libPods-expeditiewadden.a */; };
 		BC55B10B1DDDDF5C00A56F99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC55B10A1DDDDF5C00A56F99 /* main.m */; };
 		BC55B10E1DDDDF5C00A56F99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC55B10D1DDDDF5C00A56F99 /* AppDelegate.m */; };
 		BC55B1111DDDDF5C00A56F99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC55B1101DDDDF5C00A56F99 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C2C202A6BDCE51294AE23B3 /* Pods-expeditiewadden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expeditiewadden.release.xcconfig"; path = "Pods/Target Support Files/Pods-expeditiewadden/Pods-expeditiewadden.release.xcconfig"; sourceTree = "<group>"; };
+		5E94A26728C06F17E09E783D /* Pods-expeditiewadden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expeditiewadden.debug.xcconfig"; path = "Pods/Target Support Files/Pods-expeditiewadden/Pods-expeditiewadden.debug.xcconfig"; sourceTree = "<group>"; };
+		ABF4303617F07D37463A9A3F /* libPods-expeditiewadden.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-expeditiewadden.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC55B1061DDDDF5C00A56F99 /* expeditiewadden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = expeditiewadden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC55B10A1DDDDF5C00A56F99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC55B10C1DDDDF5C00A56F99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 		BC55B1151DDDDF5C00A56F99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC55B1181DDDDF5C00A56F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC55B11A1DDDDF5C00A56F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFA789B1DDDE58300165BC3 /* expeditiewadden.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = expeditiewadden.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62434117EBE14AE8D2483266 /* libPods-expeditiewadden.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020D4C15C392D5B4EF5116FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E94A26728C06F17E09E783D /* Pods-expeditiewadden.debug.xcconfig */,
+				1C2C202A6BDCE51294AE23B3 /* Pods-expeditiewadden.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4FA0579FE11A790062065BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABF4303617F07D37463A9A3F /* libPods-expeditiewadden.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC55B0FD1DDDDF5C00A56F99 = {
 			isa = PBXGroup;
 			children = (
 				BC55B1081DDDDF5C00A56F99 /* expeditiewadden */,
 				BC55B1071DDDDF5C00A56F99 /* Products */,
+				020D4C15C392D5B4EF5116FF /* Pods */,
+				B4FA0579FE11A790062065BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +83,7 @@
 		BC55B1081DDDDF5C00A56F99 /* expeditiewadden */ = {
 			isa = PBXGroup;
 			children = (
+				BCFA789B1DDDE58300165BC3 /* expeditiewadden.entitlements */,
 				BC55B10C1DDDDF5C00A56F99 /* AppDelegate.h */,
 				BC55B10D1DDDDF5C00A56F99 /* AppDelegate.m */,
 				BC55B10F1DDDDF5C00A56F99 /* ViewController.h */,
@@ -86,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC55B11D1DDDDF5C00A56F99 /* Build configuration list for PBXNativeTarget "expeditiewadden" */;
 			buildPhases = (
+				CD6A38E188C6CFE1470AC1B8 /* [CP] Check Pods Manifest.lock */,
 				BC55B1021DDDDF5C00A56F99 /* Sources */,
 				BC55B1031DDDDF5C00A56F99 /* Frameworks */,
 				BC55B1041DDDDF5C00A56F99 /* Resources */,
+				D6A64A2188E0CA73E1EBCF90 /* [CP] Embed Pods Frameworks */,
+				3D4248E7EBA2EB8844640DEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,6 +141,14 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = JEY37JY7YK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -145,6 +182,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D4248E7EBA2EB8844640DEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-expeditiewadden/Pods-expeditiewadden-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6A38E188C6CFE1470AC1B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D6A64A2188E0CA73E1EBCF90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-expeditiewadden/Pods-expeditiewadden-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC55B1021DDDDF5C00A56F99 /* Sources */ = {
@@ -271,8 +356,10 @@
 		};
 		BC55B11E1DDDDF5C00A56F99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E94A26728C06F17E09E783D /* Pods-expeditiewadden.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = expeditiewadden/expeditiewadden.entitlements;
 				DEVELOPMENT_TEAM = JEY37JY7YK;
 				INFOPLIST_FILE = expeditiewadden/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -283,8 +370,10 @@
 		};
 		BC55B11F1DDDDF5C00A56F99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C2C202A6BDCE51294AE23B3 /* Pods-expeditiewadden.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = expeditiewadden/expeditiewadden.entitlements;
 				DEVELOPMENT_TEAM = JEY37JY7YK;
 				INFOPLIST_FILE = expeditiewadden/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -312,6 +401,7 @@
 				BC55B11F1DDDDF5C00A56F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
